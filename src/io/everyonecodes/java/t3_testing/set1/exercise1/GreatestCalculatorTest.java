@@ -1,4 +1,4 @@
-package io.everyonecodes.java.t3_testing.testing.exercise1;
+package io.everyonecodes.java.t3_testing.set1.exercise1;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;

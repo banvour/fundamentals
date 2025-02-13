@@ -1,6 +1,8 @@
-package io.everyonecodes.java.t7_consolidation.set1.exercise1;
+package io.everyonecodes.java.t3_testing.set1.exercise1;
 
 import java.util.Scanner;
+
+// same case, idk what to do with this
 
 public class Main2 {
     public static void main(String[] args) {

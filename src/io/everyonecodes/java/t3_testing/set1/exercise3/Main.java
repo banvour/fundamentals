@@ -1,4 +1,4 @@
-package io.everyonecodes.java.t3_testing.testing.exercise3;
+package io.everyonecodes.java.t3_testing.set1.exercise3;
 
 import java.util.Scanner;
 
