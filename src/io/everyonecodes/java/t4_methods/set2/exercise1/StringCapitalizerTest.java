@@ -1,6 +1,6 @@
 package io.everyonecodes.java.t4_methods.set2.exercise1;
 
-
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 
@@ -15,7 +15,8 @@ class StringCapitalizerTest {
     void capitalize(String expected, String input) {
         StringCapitalizer stringCapitalizer = new StringCapitalizer();
 
-        String result = stringCapitalizer.capitalize()
+        String result = stringCapitalizer.capitalize(input);
 
+        Assertions.assertEquals(expected, result);
     }
 }
