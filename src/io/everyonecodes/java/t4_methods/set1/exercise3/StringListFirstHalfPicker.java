@@ -8,8 +8,8 @@ public class StringListFirstHalfPicker {
     Random random = new Random();
 
     public String pick(List<String> words) {
-        int size = (words.size() + 1) / 2;
-        int randomIndex = random.nextInt(size);
+        int firstHalfPlusMiddleIfOdd = (words.size() + 1) / 2;
+        int randomIndex = random.nextInt(firstHalfPlusMiddleIfOdd);
         return words.get(randomIndex);
     }
 }
