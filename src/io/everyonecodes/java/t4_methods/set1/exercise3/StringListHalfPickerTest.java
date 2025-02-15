@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 import java.util.ArrayList;
 import java.util.List;
 
-public class StringListHalfPickerTest {
+class StringListHalfPickerTest {
 
     @Test
     void testPicker() {

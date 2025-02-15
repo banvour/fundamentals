@@ -7,7 +7,7 @@ import org.junit.jupiter.params.provider.MethodSource;
 
 import java.util.stream.Stream;
 
-public class FilmCharacterParserTest {
+class FilmCharacterParserTest {
 
     FilmCharacterParser characterParser = new FilmCharacterParser();
 
