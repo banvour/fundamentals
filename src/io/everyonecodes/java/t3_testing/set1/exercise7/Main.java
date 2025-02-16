@@ -1,4 +1,4 @@
-package io.everyonecodes.java.t7_consolidation.set1.exercise7;
+package io.everyonecodes.java.t3_testing.set1.exercise7;
 
 import java.util.Scanner;
 
