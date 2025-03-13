@@ -15,9 +15,7 @@ public class HappinessDataParser {
             double score = Double.parseDouble(data.get(2));
             return Optional.of(new HappinessRecord(country, rank, score));
 
-        } catch (IndexOutOfBoundsException e) {
-            return Optional.empty();
-        } catch (NumberFormatException e) {
+        } catch (IndexOutOfBoundsException | NumberFormatException e) {
             return Optional.empty();
         }
     }
