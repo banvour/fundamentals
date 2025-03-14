@@ -4,9 +4,31 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Function;
 import java.util.logging.Filter;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
-//public class Main {
-//    public static void main(String[] args) {
+public class Main {
+    public static void main(String[] args) {}}
+
+//        List<String> upperCaseList = Stream.of("apple", "banana", "cherry")
+//                .map(String::toUpperCase)
+//                .collect(Collectors.toList());
+
+//        List<String> upperCaseList = new ArrayList<>();
+//
+//        var upperCaseList2 = Stream.of("apple", "banana", "cherry")
+//                .map(e -> {
+//                    upperCaseList2.add(e);
+//                    upperCaseList2.add("placeholder");
+//                    System.out.println(e);
+//                    return e;
+//                })
+//                .toList();
+//
+//        System.out.println(upperCaseList2);
+//        System.out.println(upperCaseList);
+//
+//    }}
 //        // Define a lambda that takes no parameters and returns nothing (void).
 ////        runnable has no input returns void!!!!!!!!!!!
 //        Runnable printLambda = () -> {

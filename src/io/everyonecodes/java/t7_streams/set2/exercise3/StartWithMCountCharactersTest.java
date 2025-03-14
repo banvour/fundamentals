@@ -11,10 +11,10 @@ class StartWithMCountCharactersTest {
     void test() {
         List<String> nums = List.of("Mary", "Joe", "Max", "Laura");
 
-        int sum = nums.stream()
+        var sum = nums.stream()
                 .filter(name -> name.startsWith("M"))
-                .mapToInt(String::length)
-                .sum();
+                .map(String::length)
+                .reduce(0, Integer::sum);
 
         Assertions.assertEquals(7, sum);
     }
