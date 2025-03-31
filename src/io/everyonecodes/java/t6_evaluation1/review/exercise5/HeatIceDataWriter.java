@@ -1,4 +1,4 @@
-package io.everyonecodes.java.t6_evaluation1.reflection.exercise5;
+package io.everyonecodes.java.t6_evaluation1.review.exercise5;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -20,7 +20,7 @@ public class HeatIceDataWriter {
 
         try {
             Files.write(path, lines);
-        } catch (IOException e) { //
+        } catch (IOException e) {
             throw new RuntimeException(e);
         }
     }

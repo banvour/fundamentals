@@ -1,0 +1,10 @@
+Giraffe
+Lion
+Fish
+Tiger
+Snake
+Dog
+Horse
+Cat
+Snail
+Mouse
