@@ -6,6 +6,7 @@ import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Stream;
 
 public class StudentPerformanceReader {
 
@@ -13,7 +14,11 @@ public class StudentPerformanceReader {
         StudentPerformanceParser parser = new StudentPerformanceParser();
         List<StudentPerformance> performances = new ArrayList<>();
 
-        try (var lines = Files.lines(input)) {
+//        try (var lines = Files.lines(input)) { // try-with-resources
+//            performances = lines
+        Stream<String> lines = null;
+        try {
+            lines = Files.lines(input);
             performances = lines
                     .skip(1)
                     .map(parser::parseLine)
@@ -21,6 +26,10 @@ public class StudentPerformanceReader {
                     .toList();
         } catch (IOException e) {
             System.out.println(" I/ O error from opening file");
+        } finally {
+            if (lines != null) {
+                lines.close();
+            }
         }
 
         return performances;
