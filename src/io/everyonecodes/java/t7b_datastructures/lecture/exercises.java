@@ -1,4 +1,4 @@
-package io.everyonecodes.java.t7b_datastructures.reflection;
+package io.everyonecodes.java.t7b_datastructures.lecture;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -23,5 +23,14 @@ public class exercises {
                 .collect(Collectors.toSet());
 
         System.out.println(mutableSetIncreased);
+
+
+// ENUMS
+        Season currentSeason = Season.SUMMER;
+        System.out.println("The current season is " + currentSeason);
+
+        for (Season season : Season.values()) {
+            System.out.println(season);
+        }
     }
 }
