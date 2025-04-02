@@ -25,6 +25,8 @@ public class CountryCityMapper {
             }
         }
 
+//        We use the if-check on purpose because not finding a mapping for a country is an expected situation rather than an error. Using a try-catch block for this kind of normal control flow isn't ideal; exceptions should be reserved for truly unexpected issues.
+//        In summary, by using an if-check rather than a try-catch block, you avoid the extra processing cost and keep your code clear and efficient.
 //        try {
 //        System.out.println(country + " has the following cities:");
 //            for (String city : cities) {
