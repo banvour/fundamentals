@@ -1,17 +1,18 @@
 package io.everyonecodes.java.t6_evaluation1.set1.exercise5;
 
 import java.util.List;
+import java.util.Objects;
 
 public class VideoGame {
-    private String id;
-    private String title;
-    private List<String> platforms;
-    private double sales;
-    private String genre;
-    private String developer;
-    private int releaseYear;
-    private int metascore;
-    private double userScore;
+    private final String id;
+    private final String title;
+    private final List<String> platforms;
+    private final double sales;
+    private final String genre;
+    private final String developer;
+    private final int releaseYear;
+    private final int metascore;
+    private final double userScore;
 
     public VideoGame(String id, String title, List<String> platforms, double sales, String genre, String developer, int releaseYear, int metascore, double userScore) {
         this.id = id;
@@ -61,15 +62,31 @@ public class VideoGame {
         return userScore;
     }
 
-    public void setMetascore(int metascore) {
-        this.metascore = metascore;
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        VideoGame videoGame = (VideoGame) o;
+        return Double.compare(videoGame.sales, sales) == 0 && releaseYear == videoGame.releaseYear && metascore == videoGame.metascore && Double.compare(videoGame.userScore, userScore) == 0 && Objects.equals(id, videoGame.id) && Objects.equals(title, videoGame.title) && Objects.equals(platforms, videoGame.platforms) && Objects.equals(genre, videoGame.genre) && Objects.equals(developer, videoGame.developer);
     }
 
-    public void setUserScore(double userScore) {
-        this.userScore = userScore;
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, title, platforms, sales, genre, developer, releaseYear, metascore, userScore);
     }
 
-    public double calculateAverageScore() {
-        return (metascore + userScore) / 2.0;
+    @Override
+    public String toString() {
+        return "VideoGame{" +
+                "id='" + id + '\'' +
+                ", title='" + title + '\'' +
+                ", platforms=" + platforms +
+                ", sales=" + sales +
+                ", genre='" + genre + '\'' +
+                ", developer='" + developer + '\'' +
+                ", releaseYear=" + releaseYear +
+                ", metascore=" + metascore +
+                ", userScore=" + userScore +
+                '}';
     }
 }
