@@ -2,7 +2,7 @@ package io.everyonecodes.java.t9_inheritance.set1.exercise1.animals;
 
 import java.util.List;
 
-public class Animal {
+public abstract class Animal {
     private final String species;
     private final List<String> movementTypes;
 
