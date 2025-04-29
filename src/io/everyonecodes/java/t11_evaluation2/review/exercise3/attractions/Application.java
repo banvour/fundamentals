@@ -1,4 +1,4 @@
-package io.everyonecodes.java.t11_evaluation2.exercise3.attractions;
+package io.everyonecodes.java.t11_evaluation2.review.exercise3.attractions;
 
 import java.util.List;
 
