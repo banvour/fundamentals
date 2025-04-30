@@ -4,11 +4,11 @@ import java.util.Objects;
 
 public class AvocadoEntry {
 
-    private String type;
-    private double averagePrice;
-    private double totalSold;
-    private String region;
-    private int year;
+    private final String type;
+    private final double averagePrice;
+    private final double totalSold;
+    private final String region;
+    private final int year;
 
     public AvocadoEntry(String type, double averagePrice, double totalSold, String region, int year) {
         this.type = type;

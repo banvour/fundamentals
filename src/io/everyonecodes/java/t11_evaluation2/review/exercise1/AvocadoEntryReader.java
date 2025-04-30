@@ -21,7 +21,7 @@ public class AvocadoEntryReader {
                 .collect(toList());
     }
 
-    private Function<List<String>, io.everyonecodes.java.t11_evaluation2.exercise1.AvocadoEntry> toAvocadoEntry() {
+    private Function<List<String>, AvocadoEntry> toAvocadoEntry() {
         return columns -> new AvocadoEntry(
                 columns.get(11),
                 Double.parseDouble(columns.get(2)),

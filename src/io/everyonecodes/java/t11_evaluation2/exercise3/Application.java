@@ -16,6 +16,6 @@ public class Application {
         );
 
         final AttractionAdvertiser attractionAdvertiser = new AttractionAdvertiser();
-        attractionAdvertiser.advertise(listOfAttractions);
+        String w = attractionAdvertiser.advertise(listOfAttractions);
     }
 }

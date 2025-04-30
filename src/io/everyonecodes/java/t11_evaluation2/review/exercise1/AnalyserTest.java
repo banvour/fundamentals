@@ -17,7 +17,7 @@ class AnalyserTest {
 
     private static final String inputPath = "src/io/everyonecodes/java/t11_evaluation2/exercise1/files/avocado.csv";
     private static final AvocadoEntryReader reader = new AvocadoEntryReader();
-    private final io.everyonecodes.java.t11_evaluation2.exercise1.Analyser analyser = new Analyser();
+    private final Analyser analyser = new Analyser();
 
     @ParameterizedTest
     @MethodSource("parameters")
